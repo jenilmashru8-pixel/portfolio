@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenil Mashru — Full-stack Developer</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Personal Portfolio of Jenil Mashru - Full-stack & AI-ML Developer building modern web and software experiences.">
+    <meta name="author" content="Jenil Mashru">
+
+    <!-- Google Fonts: Courier Prime, IBM Plex Mono, Fira Code, Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fira+Code:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-load-init">
+
+    <!-- ==========================================
+         SOFT WHITE GLOW CURSOR
+         ========================================== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+
+    <!-- ==========================================
+         BACKGROUND LAYER (NOISE, GRID, RADIAL GRADIENT)
+         ========================================== -->
+    <div class="bg-layer">
+        <div class="bg-radial-gradient"></div>
+        <div class="bg-faint-grid"></div>
+        <div class="bg-subtle-noise"></div>
+    </div>
+
+
+    <!-- ==========================================
+         NAVBAR SECTION
+         ========================================== -->
+    <header class="navbar-container">
+        <!-- Top Left Corner Name Branding -->
+        <a href="#" class="nav-brand-outside">
+            <span>Jenil Mashru</span>
+        </a>
+
+        <nav class="floating-navbar" id="navbar">
+            <!-- Inline Tabs Horizontal Row -->
+            <div class="nav-links">
+                <a href="#skills" class="nav-link">Tech Stack</a>
+                <a href="#experience" class="nav-link">Experience & Education</a>
+                <a href="#certificates" class="nav-link">Certificates & Awards</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Right: Theme Toggle Icon -->
+            <button class="nav-icon-btn" id="themeBtn" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- ==========================================
+         HERO SECTION (VERTICALLY CENTERED)
+         ========================================== -->
+    <main class="hero-section">
+        <div class="hero-content">
+            
+            <!-- Availability Badge -->
+            <div class="badge-wrapper fade-element">
+                <div class="availability-badge" id="badge">
+                    <span class="green-dot"></span>
+                    <span class="badge-text">Actively Seeking Job Opportunities</span>
+                </div>
+            </div>
+
+            <!-- Main Heading (Staggered Word Reveal, Blur + Fade Upward) -->
+            <h1 class="main-heading parallax-heading" id="heading">
+                <div id="fullstack-root">
+                    <span class="word-wrap"><span class="word">Full-stack</span></span>
+                    <span class="word-wrap"><span class="word">Developer</span></span>
+                </div>
+            </h1>
+
+            <!-- Description -->
+            <p class="description parallax-desc fade-element">
+                Building elegant digital experiences with modern web technologies. Specialized in Full Stack Development, AI/ML solutions, and scalable architecture.
+            </p>
+
+            <!-- Buttons Group -->
+            <div class="buttons-group parallax-buttons fade-element">
+                <!-- Get in Touch Button -->
+                <a href="#contact" class="btn magnetic-btn">
+                    <span>Get in Touch</span>
+                </a>
+
+                <!-- View Project Button -->
+                <a href="#projects" class="btn magnetic-btn">
+                    <span>View Project</span>
+                </a>
+
+                <!-- Gray Placeholder Box Button -->
+                <a href="https://github.com/jenilmashru8-pixel" target="_blank" rel="noopener noreferrer" class="btn-gray-box magnetic-btn" aria-label="Github Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Scroll Indicator Arrow -->
+            <div class="scroll-indicator fade-element">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ==========================================
+         TECH STACK & SKILLS SECTION
+         ========================================== -->
+    <section id="skills" class="section-container">
+        <!-- React Mounting Point for Rotating Header (Technologies i engineer/architect/etc) -->
+        <div id="techstack-header-root"></div>
+
+        <!-- Infinite Marquee Track (Matching attached video) -->
+        <div class="skills-marquee-container">
+            <!-- Row 1: Scrolling Left -->
+            <div class="marquee-row marquee-left">
+                <div class="marquee-track">
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.5 3h15l-1.37 15.35L12 21l-6.13-2.65L4.5 3z" fill="#E34F26"/><path d="M12 4.77v14.4l4.67-2.02 1.05-11.78H12z" fill="#EF652A"/><path d="M8.04 7.64h7.92l-.24 2.62H8.28l.24 2.62h7.2l-.56 6.27-3.16 1.36-3.16-1.36-.21-2.35h-2.1l.36 4.14 5.11 2.2 5.11-2.2.69-7.74.08-.9H8.04v-2.62z" fill="#FFF"/></svg></div><span>HTML</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.5 3h15l-1.37 15.35L12 21l-6.13-2.65L4.5 3z" fill="#1572B6"/><path d="M12 4.77v14.4l4.67-2.02 1.05-11.78H12z" fill="#33A9DC"/><path d="M8.04 7.64h7.92l-.24 2.62H8.28l.24 2.62h7.2l-.56 6.27-3.16 1.36-3.16-1.36-.21-2.35h-2.1l.36 4.14 5.11 2.2 5.11-2.2.69-7.74.08-.9H8.04v-2.62z" fill="#FFF"/></svg></div><span>CSS</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#F7DF1E"/><path d="M6.7 18.5c.4.7 1.1 1.2 2.1 1.2 1.1 0 1.8-.6 1.8-1.5 0-1-.7-1.4-1.9-1.9l-.7-.3c-1.8-.8-2.9-1.7-2.9-3.7 0-2.1 1.6-3.7 4.2-3.7 1.8 0 3.1.7 3.9 2.2l-1.8 1.1c-.5-.8-1.1-1.2-2.1-1.2-.9 0-1.6.6-1.6 1.3 0 .9.6 1.3 1.8 1.8l.7.3c2.1.9 3.1 1.9 3.1 3.8 0 2.4-1.8 3.8-4.5 3.8-2.3 0-3.8-1-4.7-2.6l2.6-1.6zm8.8.4c.5.3 1.1.5 1.7.5.9 0 1.4-.4 1.4-1.3V8.8h2.6v9.1c0 2.3-1.4 3.4-3.7 3.4-1.4 0-2.5-.4-3.3-1.2l1.3-1.2z" fill="#000"/></svg></div><span>JavaScript</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#3178C6"/><text x="11" y="14" font-family="sans-serif" font-weight="bold" font-size="10" fill="#FFF" text-anchor="middle">TS</text></svg></div><span>TypeScript</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="12" rx="3.5" ry="9" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="3.5" ry="9" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(90 12 12)"/><ellipse cx="12" cy="12" rx="3.5" ry="9" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(150 12 12)"/><circle cx="12" cy="12" r="2" fill="#61DAFB"/></svg></div><span>React</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#000" stroke="#FFF" stroke-width="1"/><path d="M15.5 17L8.5 7h-1v10h1.5v-7l7 10h1V7h-1.5v10z" fill="#FFF"/></svg></div><span>Next.js</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 5.5l1.4 11L12 21l7.6-4.5L21 5.5 12 2z" fill="#DD0031"/><path d="M12 2v19l7.6-4.5L21 5.5 12 2z" fill="#C3002F"/><path d="M12 4.5l5.2 11.7h-2.1l-1.1-2.6h-4l-1.1 2.6H6.8L12 4.5zm1.2 7.3L12 6.8l-1.2 5h2.4z" fill="#FFF"/></svg></div><span>Angular</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 6c-2.3 0-3.8 1.1-4.5 3.4 1-.7 2.1-.9 3.2-.6 1.2.3 2.1 1.2 3.1 2.2 1.6 1.7 3.4 3.5 7.2 3.5 2.3 0 3.8-1.1 4.5-3.4-1 .7-2.1.9-3.2.6-1.2-.3-2.1-1.2-3.1-2.2-1.6-1.7-3.4-3.5-7.2-3.5z" fill="#38BDF8"/><path d="M4.5 13.5C2.2 13.5.7 14.6 0 16.9c1-.7 2.1-.9 3.2-.6 1.2.3 2.1 1.2 3.1 2.2 1.6 1.7 3.4 3.5 7.2 3.5 2.3 0 3.8-1.1 4.5-3.4-1 .7-2.1.9-3.2.6-1.2-.3-2.1-1.2-3.1-2.2-1.6-1.7-3.4-3.5-7.2-3.5z" fill="#38BDF8"/></svg></div><span>Tailwind CSS</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z" fill="#339933"/><path d="M12 4.5L5.5 8.2v7.6l6.5 3.7 6.5-3.7V8.2L12 4.5z" fill="#339933"/><path d="M12 8.5l4 2.3v4.6l-4 2.3-4-2.3v-4.6l4-2.3z" fill="#FFF"/></svg></div><span>Node.js</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="11" fill="#181818" stroke="#FFF" stroke-width="1"/><text x="11" y="14" font-family="sans-serif" font-weight="bold" font-size="9" fill="#FFF" text-anchor="middle">ex</text></svg></div><span>Express</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 00-4 4v3h8V6a4 4 0 00-4-4z" fill="#5382A1"/><path d="M4 11h16v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8z" fill="#E76F00"/></svg></div><span>Java</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M11.8 2c-5 0-4.7 2.2-4.7 2.2l.1 2.2h4.7v.7H5.4S2 6.6 2 11.6s3 4.9 3 4.9h1.8v-2.5s-.1-3 3-3h5.1s2.9.1 2.9-2.8V4.8s.4-2.8-6-2.8z" fill="#3776AB"/><path d="M12.2 22c5 0 4.7-2.2 4.7-2.2l-.1-2.2H12v-.7h6.5s3.4.5 3.4-4.5-3-4.9-3-4.9h-1.8v2.5s.1 3-3 3H9s-2.9-.1-2.9 2.8v4.3s-.4 2.9 6.1 2.9z" fill="#FFD43B"/></svg></div><span>Python</span></div>
+
+                    <!-- Duplicate for infinite seamless scroll -->
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.5 3h15l-1.37 15.35L12 21l-6.13-2.65L4.5 3z" fill="#E34F26"/><path d="M12 4.77v14.4l4.67-2.02 1.05-11.78H12z" fill="#EF652A"/><path d="M8.04 7.64h7.92l-.24 2.62H8.28l.24 2.62h7.2l-.56 6.27-3.16 1.36-3.16-1.36-.21-2.35h-2.1l.36 4.14 5.11 2.2 5.11-2.2.69-7.74.08-.9H8.04v-2.62z" fill="#FFF"/></svg></div><span>HTML</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.5 3h15l-1.37 15.35L12 21l-6.13-2.65L4.5 3z" fill="#1572B6"/><path d="M12 4.77v14.4l4.67-2.02 1.05-11.78H12z" fill="#33A9DC"/><path d="M8.04 7.64h7.92l-.24 2.62H8.28l.24 2.62h7.2l-.56 6.27-3.16 1.36-3.16-1.36-.21-2.35h-2.1l.36 4.14 5.11 2.2 5.11-2.2.69-7.74.08-.9H8.04v-2.62z" fill="#FFF"/></svg></div><span>CSS</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#F7DF1E"/><path d="M6.7 18.5c.4.7 1.1 1.2 2.1 1.2 1.1 0 1.8-.6 1.8-1.5 0-1-.7-1.4-1.9-1.9l-.7-.3c-1.8-.8-2.9-1.7-2.9-3.7 0-2.1 1.6-3.7 4.2-3.7 1.8 0 3.1.7 3.9 2.2l-1.8 1.1c-.5-.8-1.1-1.2-2.1-1.2-.9 0-1.6.6-1.6 1.3 0 .9.6 1.3 1.8 1.8l.7.3c2.1.9 3.1 1.9 3.1 3.8 0 2.4-1.8 3.8-4.5 3.8-2.3 0-3.8-1-4.7-2.6l2.6-1.6zm8.8.4c.5.3 1.1.5 1.7.5.9 0 1.4-.4 1.4-1.3V8.8h2.6v9.1c0 2.3-1.4 3.4-3.7 3.4-1.4 0-2.5-.4-3.3-1.2l1.3-1.2z" fill="#000"/></svg></div><span>JavaScript</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#3178C6"/><text x="11" y="14" font-family="sans-serif" font-weight="bold" font-size="10" fill="#FFF" text-anchor="middle">TS</text></svg></div><span>TypeScript</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="12" rx="3.5" ry="9" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="3.5" ry="9" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(90 12 12)"/><ellipse cx="12" cy="12" rx="3.5" ry="9" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(150 12 12)"/><circle cx="12" cy="12" r="2" fill="#61DAFB"/></svg></div><span>React</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#000" stroke="#FFF" stroke-width="1"/><path d="M15.5 17L8.5 7h-1v10h1.5v-7l7 10h1V7h-1.5v10z" fill="#FFF"/></svg></div><span>Next.js</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 5.5l1.4 11L12 21l7.6-4.5L21 5.5 12 2z" fill="#DD0031"/><path d="M12 2v19l7.6-4.5L21 5.5 12 2z" fill="#C3002F"/><path d="M12 4.5l5.2 11.7h-2.1l-1.1-2.6h-4l-1.1 2.6H6.8L12 4.5zm1.2 7.3L12 6.8l-1.2 5h2.4z" fill="#FFF"/></svg></div><span>Angular</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 6c-2.3 0-3.8 1.1-4.5 3.4 1-.7 2.1-.9 3.2-.6 1.2.3 2.1 1.2 3.1 2.2 1.6 1.7 3.4 3.5 7.2 3.5 2.3 0 3.8-1.1 4.5-3.4-1 .7-2.1.9-3.2.6-1.2-.3-2.1-1.2-3.1-2.2-1.6-1.7-3.4-3.5-7.2-3.5z" fill="#38BDF8"/><path d="M4.5 13.5C2.2 13.5.7 14.6 0 16.9c1-.7 2.1-.9 3.2-.6 1.2.3 2.1 1.2 3.1 2.2 1.6 1.7 3.4 3.5 7.2 3.5 2.3 0 3.8-1.1 4.5-3.4-1 .7-2.1.9-3.2.6-1.2-.3-2.1-1.2-3.1-2.2-1.6-1.7-3.4-3.5-7.2-3.5z" fill="#38BDF8"/></svg></div><span>Tailwind CSS</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z" fill="#339933"/><path d="M12 4.5L5.5 8.2v7.6l6.5 3.7 6.5-3.7V8.2L12 4.5z" fill="#339933"/><path d="M12 8.5l4 2.3v4.6l-4 2.3-4-2.3v-4.6l4-2.3z" fill="#FFF"/></svg></div><span>Node.js</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="11" fill="#181818" stroke="#FFF" stroke-width="1"/><text x="11" y="14" font-family="sans-serif" font-weight="bold" font-size="9" fill="#FFF" text-anchor="middle">ex</text></svg></div><span>Express</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 00-4 4v3h8V6a4 4 0 00-4-4z" fill="#5382A1"/><path d="M4 11h16v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8z" fill="#E76F00"/></svg></div><span>Java</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M11.8 2c-5 0-4.7 2.2-4.7 2.2l.1 2.2h4.7v.7H5.4S2 6.6 2 11.6s3 4.9 3 4.9h1.8v-2.5s-.1-3 3-3h5.1s2.9.1 2.9-2.8V4.8s.4-2.8-6-2.8z" fill="#3776AB"/><path d="M12.2 22c5 0 4.7-2.2 4.7-2.2l-.1-2.2H12v-.7h6.5s3.4.5 3.4-4.5-3-4.9-3-4.9h-1.8v2.5s.1 3-3 3H9s-2.9-.1-2.9 2.8v4.3s-.4 2.9 6.1 2.9z" fill="#FFD43B"/></svg></div><span>Python</span></div>
+                </div>
+            </div>
+
+            <!-- Row 2: Scrolling Right -->
+            <div class="marquee-row marquee-right">
+                <div class="marquee-track">
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2c-5.5 0-10 1.8-10 4v12c0 2.2 4.5 4 10 4s10-1.8 10-4V6c0-2.2-4.5-4-10-4zm0 2c4.4 0 8 1.3 8 2s-3.6 2-8 2-8-1.3-8-2 3.6-2 8-2zm0 6c4.4 0 8-1.3 8-2v3c0 .7-3.6 2-8 2s-8-1.3-8-2V10c0 .7 3.6 2 8 2zm0 6c4.4 0 8-1.3 8-2v3c0 .7-3.6 2-8 2s-8-1.3-8-2V16c0 .7 3.6 2 8 2z" fill="#FFCA28"/></svg></div><span>Firebase</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8 0-1.8.6-3.5 1.7-4.8l11.1 11.1c-1.3 1.1-3 1.7-4.8 1.7zm6.3-3.2L7.2 5.7C8.5 4.6 10.2 4 12 4c4.4 0 8 3.6 8 8 0 1.8-.6 3.5-1.7 4.8z" fill="#47A248"/></svg></div><span>MongoDB</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5z" fill="#00758F"/><path d="M12 4c4.4 0 8 1.3 8 2s-3.6 2-8 2-8-1.3-8-2 3.6-2 8-2z" fill="#F29111"/></svg></div><span>MySQL</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 9l8 13 8-13-8-7zm0 3.5L16.5 9 12 16.5 7.5 9 12 5.5z" fill="#EE4C2C"/></svg></div><span>PyTorch</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zm0 8L4.5 6.25v7.5L12 17.5l7.5-3.75v-7.5L12 10z" fill="#FF6F00"/></svg></div><span>TensorFlow</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#F7931E"/><circle cx="12" cy="12" r="5" fill="#3598DB"/></svg></div><span>Scikit-Learn</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 4.5C7 4.5 2.7 7.6 1 12c1.7 4.4 6 7.5 11 7.5s9.3-3.1 11-7.5c-1.7-4.4-6-7.5-11-7.5zm0 12.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z" fill="#00D2FF"/></svg></div><span>Computer Vision</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.7 10.3l-8.6-8.6c-.6-.6-1.5-.6-2.1 0L9.3 3.4l3.1 3.1c.4-.1.9 0 1.2.3.5.5.5 1.3 0 1.8-.4.4-1.1.5-1.6.2l-3 3v4.6c.4.2.7.6.7 1.1 0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3c0-.5.3-.9.7-1.1V11c-.4-.2-.7-.6-.7-1.1 0-.5.3-.9.7-1.1L6.7 5.7c-.6-.6-1.5-.6-2.1 0L2.3 8c-.6.6-.6 1.5 0 2.1l8.6 8.6c.6.6 1.5.6 2.1 0l8.7-8.4c.6-.6.6-1.5 0-2full-stackz" fill="#F05032"/></svg></div><span>Git</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17.5 2.5L3 10.5l4 2 9.5-9.5-6.5 11 9 5.5 2.5-2V3l-4-.5z" fill="#007ACC"/></svg></div><span>VS Code</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z" fill="#2496ED"/></svg></div><span>Docker</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#FF6C37"/><path d="M12 6l5 12h-3.2l-1.8-4.5h-4L6.2 18H3L8 6h4z" fill="#FFF"/></svg></div><span>Postman</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#000000"/><text x="11" y="15" font-family="serif" font-weight="bold" font-size="12" fill="#FFF" text-anchor="middle">N</text></svg></div><span>Notion</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#008080"/><text x="11" y="14" font-family="serif" font-weight="bold" font-size="9" fill="#FFF" text-anchor="middle">LaTeX</text></svg></div><span>LaTeX</span></div>
+
+                    <!-- Duplicate for infinite seamless scroll -->
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2c-5.5 0-10 1.8-10 4v12c0 2.2 4.5 4 10 4s10-1.8 10-4V6c0-2.2-4.5-4-10-4zm0 2c4.4 0 8 1.3 8 2s-3.6 2-8 2-8-1.3-8-2 3.6-2 8-2zm0 6c4.4 0 8-1.3 8-2v3c0 .7-3.6 2-8 2s-8-1.3-8-2V10c0 .7 3.6 2 8 2zm0 6c4.4 0 8-1.3 8-2v3c0 .7-3.6 2-8 2s-8-1.3-8-2V16c0 .7 3.6 2 8 2z" fill="#FFCA28"/></svg></div><span>Firebase</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8 0-1.8.6-3.5 1.7-4.8l11.1 11.1c-1.3 1.1-3 1.7-4.8 1.7zm6.3-3.2L7.2 5.7C8.5 4.6 10.2 4 12 4c4.4 0 8 3.6 8 8 0 1.8-.6 3.5-1.7 4.8z" fill="#47A248"/></svg></div><span>MongoDB</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 4.2 2 7v10c0 2.8 4.5 5 10 5s10-2.2 10-5V7c0-2.8-4.5-5-10-5z" fill="#00758F"/><path d="M12 4c4.4 0 8 1.3 8 2s-3.6 2-8 2-8-1.3-8-2 3.6-2 8-2z" fill="#F29111"/></svg></div><span>MySQL</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 9l8 13 8-13-8-7zm0 3.5L16.5 9 12 16.5 7.5 9 12 5.5z" fill="#EE4C2C"/></svg></div><span>PyTorch</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zm0 8L4.5 6.25v7.5L12 17.5l7.5-3.75v-7.5L12 10z" fill="#FF6F00"/></svg></div><span>TensorFlow</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#F7931E"/><circle cx="12" cy="12" r="5" fill="#3598DB"/></svg></div><span>Scikit-Learn</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 4.5C7 4.5 2.7 7.6 1 12c1.7 4.4 6 7.5 11 7.5s9.3-3.1 11-7.5c-1.7-4.4-6-7.5-11-7.5zm0 12.5c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5zm0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z" fill="#00D2FF"/></svg></div><span>Computer Vision</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.7 10.3l-8.6-8.6c-.6-.6-1.5-.6-2.1 0L9.3 3.4l3.1 3.1c.4-.1.9 0 1.2.3.5.5.5 1.3 0 1.8-.4.4-1.1.5-1.6.2l-3 3v4.6c.4.2.7.6.7 1.1 0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3c0-.5.3-.9.7-1.1V11c-.4-.2-.7-.6-.7-1.1 0-.5.3-.9.7-1.1L6.7 5.7c-.6-.6-1.5-.6-2.1 0L2.3 8c-.6.6-.6 1.5 0 2.1l8.6 8.6c.6.6 1.5.6 2.1 0l8.7-8.4c.6-.6.6-1.5 0-2full-stackz" fill="#F05032"/></svg></div><span>Git</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17.5 2.5L3 10.5l4 2 9.5-9.5-6.5 11 9 5.5 2.5-2V3l-4-.5z" fill="#007ACC"/></svg></div><span>VS Code</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z" fill="#2496ED"/></svg></div><span>Docker</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#FF6C37"/><path d="M12 6l5 12h-3.2l-1.8-4.5h-4L6.2 18H3L8 6h4z" fill="#FFF"/></svg></div><span>Postman</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#000000"/><text x="11" y="15" font-family="serif" font-weight="bold" font-size="12" fill="#FFF" text-anchor="middle">N</text></svg></div><span>Notion</span></div>
+                    <div class="marquee-item"><div class="marquee-icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect width="22" height="22" rx="4" fill="#008080"/><text x="11" y="14" font-family="serif" font-weight="bold" font-size="9" fill="#FFF" text-anchor="middle">LaTeX</text></svg></div><span>LaTeX</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION & EXPERIENCE SECTION
+         ========================================== -->
+    <section id="experience" class="section-container">
+        <span class="section-tag">// Career & Learning</span>
+        <h2 class="section-title">Education & Experience</h2>
+
+        <div class="exp-edu-grid">
+            <!-- Left Column: Work Experience -->
+            <div class="glass-card exp-card">
+                <div class="card-header-flex">
+                    <div class="card-icon-badge">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h3 class="card-title">Work Experience</h3>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1: Nayara Energy Limited -->
+                    <div class="timeline-item">
+                        <div class="timeline-org">Nayara Energy Limited</div>
+                        <div class="timeline-role">Web Developer Intern (Digital PSSR)</div>
+                        <div class="timeline-date">Jun 2026 — Jul 2026</div>
+                        <p class="timeline-desc">
+                            Engineered the Digital PSSR (Pre-Commissioning & Startup Safety Review) web application, digitizing industrial safety workflows, compliance tracking, and operational audit reporting.
+                        </p>
+                    </div>
+
+                    <!-- Item 2: India Onion -->
+                    <div class="timeline-item">
+                        <div class="timeline-org">India Onion</div>
+                        <div class="timeline-role">Frontend Developer Intern</div>
+                        <div class="timeline-date">May 2026 — Jul 2026</div>
+                        <p class="timeline-desc">
+                            Engineered the "INDIA ONION – Market Intelligence Portal", an AI-powered agricultural market intelligence & monetization platform. Developed data pipeline integrations, price-trend analytics, and interactive dashboards feeding AI modules.
+                        </p>
+                    </div>
+
+                    <!-- Item 3: Brainy Beam Technologies -->
+                    <div class="timeline-item">
+                        <div class="timeline-org">Brainy Beam Technologies</div>
+                        <div class="timeline-role">Android App Developer Intern</div>
+                        <div class="timeline-date">Jun 2024 — Sep 2024</div>
+                        <p class="timeline-desc">
+                            Engineered native Android application modules using Java & XML. Integrated RESTful APIs, optimized local storage performance, and collaborated on UI/UX components.
+                        </p>
+                    </div>
+
+                    <!-- Item 4: Miracle Technolabs -->
+                    <div class="timeline-item">
+                        <div class="timeline-org">Miracle Technolabs</div>
+                        <div class="timeline-role">Web Development Intern</div>
+                        <div class="timeline-date">Aug 2023 — Nov 2023</div>
+                        <p class="timeline-desc">
+                            Developed responsive frontend interfaces with HTML, CSS, JavaScript, and React. Built modular components and optimized website load speed across breakpoints.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Education -->
+            <div class="glass-card edu-card">
+                <div class="card-header-flex">
+                    <div class="card-icon-badge">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                    </div>
+                    <h3 class="card-title">Education</h3>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1: Adani University -->
+                    <div class="timeline-item">
+                        <div class="timeline-org">Adani University, Ahmedabad</div>
+                        <div class="timeline-role">B.Tech — CS & Technology (AI-ML)</div>
+                        <div class="timeline-date">Jul 2025 — May 2028</div>
+                        <p class="timeline-desc">
+                            Specializing in Artificial Intelligence, Machine Learning algorithms, Data Structures & Neural Networks. Active in AI research & full-stack development.
+                        </p>
+                    </div>
+
+                    <!-- Item 2: Kalyan Polytechnic -->
+                    <div class="timeline-item">
+                        <div class="timeline-org">Kalyan Polytechnic (GTU)</div>
+                        <div class="timeline-role">Diploma in CS Engineering</div>
+                        <div class="timeline-date">Sep 2022 — May 2025</div>
+                        <div class="cgpa-badge">CGPA: 9.31 / 10</div>
+                        <p class="timeline-desc">
+                            Graduated with Distinction (9.31 CGPA). Built foundational expertise in Software Engineering, Java Programming, Database Management (SQL), and Operating Systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATES & HACKATHONS SECTION (REACT DRIVEN WITH DECRYPTED TEXT EFFECT)
+         ========================================== -->
+    <section id="certificates" class="section-container">
+        <div id="certificates-root"></div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED PROJECTS SECTION (REACT DRIVEN WITH DECRYPTED TEXT EFFECT)
+         ========================================== -->
+    <section id="projects" class="section-container">
+        <div id="projects-root"></div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact" class="section-container">
+        <span class="section-tag">// Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+
+        <div class="contact-grid">
+            <!-- Left Info Card -->
+            <div class="glass-card contact-info-card">
+                <h3 class="card-title">Contact Information</h3>
+                <p class="card-text">
+                    Whether you have a project in mind, a job opportunity, or just want to discuss AI/ML and software development — feel free to reach out!
+                </p>
+
+                <div class="contact-details">
+                    <a href="mailto:jenilmashru8@gmail.com" class="contact-item">
+                        <div class="icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">jenilmashru8@gmail.com</div>
+                        </div>
+                    </a>
+
+                    <a href="tel:+919427408157" class="contact-item">
+                        <div class="icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Phone</div>
+                            <div class="contact-value">+91 9427408157</div>
+                        </div>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div>
+                            <div class="contact-label">Location</div>
+                            <div class="contact-value">Ahmedabad, Gujarat, India</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/jenilmashru8-pixel" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/jenil-mashru" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Interactive Form Card -->
+            <div class="glass-card contact-form-card">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Hello Jenil, I'd like to talk about..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn send-btn magnetic-btn">
+                        <span>Send Message</span>
+                    </button>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- React DecryptedText Entry Point -->
+    <script type="module" src="./src/main.jsx"></script>
+    <!-- Vanilla JS Script -->
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

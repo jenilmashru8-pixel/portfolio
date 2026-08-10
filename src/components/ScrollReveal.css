@@ -1,0 +1,22 @@
+.scroll-reveal {
+  font-family: var(--font-mono);
+  margin: 0 0 20px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.scroll-reveal-text {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  font-weight: 500;
+  font-family: var(--font-sans);
+}
+
+.scroll-reveal .word {
+  display: inline-block;
+  margin-right: 0.22em;
+  will-change: opacity, filter, transform;
+}

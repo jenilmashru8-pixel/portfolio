@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+dist
+build
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & IDE
+.env
+.env.local
+.DS_Store
+.vscode
+.idea
+
+# Raw scans & large media in root (clean repo - active assets are in /public)
+Adobe Scan*.pdf
+Screen Recording*.mp4
+*.docx
