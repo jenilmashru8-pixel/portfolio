@@ -139,22 +139,66 @@ document.addEventListener('DOMContentLoaded', () => {
     const formFeedback = document.getElementById('formFeedback');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
 
             if (formFeedback) {
-                formFeedback.className = 'form-feedback success';
-                formFeedback.textContent = 'Opening email client... Thank you for reaching out!';
+                formFeedback.className = 'form-feedback active sending';
+                formFeedback.textContent = '⚡ Sending your message directly to Jenil...';
             }
 
-            const mailtoUrl = `mailto:jenilmashru8@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-            window.location.href = mailtoUrl;
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = '0.7';
+            }
 
-            contactForm.reset();
+            try {
+                const response = await fetch('https://formsubmit.co/ajax/jenilmashru8@gmail.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        _subject: `[Portfolio Inquiry] ${subject}`,
+                        _template: 'table',
+                        _captcha: 'false',
+                        message: message
+                    })
+                });
+
+                const result = await response.json();
+
+                if (response.ok || result.success === "true" || result.success === true) {
+                    if (formFeedback) {
+                        formFeedback.className = 'form-feedback active success';
+                        formFeedback.textContent = '✅ Thank you! Your message has been sent directly to Jenil\'s email.';
+                    }
+                    contactForm.reset();
+                } else {
+                    throw new Error(result.message || 'Submission failed');
+                }
+            } catch (err) {
+                console.warn('Direct API submission failed, falling back to mailto:', err);
+                if (formFeedback) {
+                    formFeedback.className = 'form-feedback active sending';
+                    formFeedback.textContent = 'Opening your email client...';
+                }
+                const mailtoUrl = `mailto:jenilmashru8@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                window.location.href = mailtoUrl;
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                }
+            }
         });
     }
 

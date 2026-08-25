@@ -78,10 +78,12 @@ const certData = [
     id: 'gtu-diploma',
     title: 'Diploma CS Engineering — Distinction (9.31 CGPA)',
     issuer: 'GTU / KALYAN POLYTECHNIC',
-    year: '2025',
+    year: '2026',
     category: 'Internships & Work',
-    desc: 'Graduated with Distinction (9.31/10 CGPA). Built deep expertise in Java, Database Management (SQL), and Operating Systems.',
+    desc: 'Official Certificate of Passing awarded by Gujarat Technological University (GTU) for Diploma in Computer Science & Engineering at Kalyan Polytechnic with First Class with Distinction (9.31 CGPA, Enrolment No. 229830331033).',
     badgeColor: '#eab308',
+    thumbnail: '/gtu_diploma_cert.jpg',
+    file: '/gtu_diploma_cert.jpg',
     icon: (
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#eab308" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
@@ -289,14 +291,14 @@ const certData = [
   },
   {
     id: 'cyber-samwad',
-    title: 'Cyber Samwad — Cybersecurity in the Era of AI',
+    title: 'Cyber Samwad 2025 — National Cybersecurity Summit',
     issuer: 'IEEE Gujarat Section & Adani University',
     year: '2025',
     category: 'Volunteering & Community',
-    desc: 'Certificate of Participation for attending Cyber Samwad on "Cybersecurity in the Era of AI" organized by IEEE Gujarat Section in collaboration with IEEE Signal Processing Society (Gujarat Chapter) and Adani University (Nov 15, 2025).',
+    desc: 'Certificate of Participation for CYBER SAMWAD 2025 – A National Cybersecurity Summit held on November 15, 2025 at Adani University, Ahmedabad, recognizing enthusiasm towards cyber awareness, digital safety, and responsible online practices.',
     badgeColor: '#10b981',
-    thumbnail: '/cyber_samwad_cert.jpg',
-    file: '/cyber_samwad_cert.jpg',
+    thumbnail: '/cyber_samwad_cert.png',
+    file: '/cyber_samwad_cert.png',
     icon: (
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
