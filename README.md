@@ -1,9 +1,12 @@
 # 🚀 Jenil Mashru — Personal Portfolio
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-jenilmashruportfolio.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://jenilmashruportfolio.netlify.app/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+> 🔗 **Live Website**: [Jenil Mashru — Full-stack Developer](https://jenilmashruportfolio.netlify.app/)
 
 A modern, high-performance personal portfolio built for **Jenil Mashru** — Full-stack & AI-ML Developer. Designed with sleek dark UI aesthetic, subtle noise & grid overlays, custom physics interactive components, and smooth animations.
 
@@ -31,7 +34,7 @@ A modern, high-performance personal portfolio built for **Jenil Mashru** — Ful
 | **Frontend** | React 19, JavaScript (ES6+), HTML5, CSS3 |
 | **Build Tool** | Vite 6.2 |
 | **Animations** | Motion / Framer Motion, GSAP |
-| **Deployment** | Vercel / Netlify |
+| **Deployment** | Netlify / Vercel |
 
 ---
 
@@ -82,6 +85,7 @@ portfolio/
 ├── index.html              # Main HTML entry point
 ├── style.css               # Design system, tokens & global styling
 ├── script.js               # Physics, cursor glow, theme & UI interactions
+├── netlify.toml            # Netlify deployment configuration
 ├── vite.config.js          # Vite build config
 ├── vercel.json             # Vercel deployment configuration
 └── package.json            # Dependencies and scripts
@@ -89,7 +93,14 @@ portfolio/
 
 ---
 
+## 🌐 Live Website
+
+- 🔗 **Portfolio**: [Jenil Mashru — Full-stack Developer](https://jenilmashruportfolio.netlify.app/)
+
+---
+
 ## 👤 Author
 
 **Jenil Mashru**  
+- Website: [jenilmashruportfolio.netlify.app](https://jenilmashruportfolio.netlify.app/)
 - GitHub: [@jenilmashru8-pixel](https://github.com/jenilmashru8-pixel)
